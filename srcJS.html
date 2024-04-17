@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="utf-16"></meta>
+    </head>
+    <body style = "margin: 0px; background-color: #282828;">
+        <div id = "Test">
+            <div id = "newText">
+                <code data = "2"><p style = "margin: 0px;">// Welcome to my markdown, simply hover over text with a pointer icon</p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>// Like This</hover-over><hover-text>These are indicated through the colored flags on the left</hover-text></code>
+                <code><p style = "margin: 0px;"></p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>var chessPieces = [</hover-over><hover-text>This shows usage of a 2d array, with the purpouse being to control the chess board and store the pieces of the positions. Lines(63-72)</hover-text></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["BR", "BN", "BB", "BQ", "BK", "BB", "BN", "BR"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["BP", "BP", "BP", "BP", "BP", "BP", "BP", "BP"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["WP", "WP", "WP", "WP", "WP", "WP", "WP", "WP"], </p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>["WR", "WN", "WB", "WQ", "WK", "WB", "WN", "WR"], </p></code>
+                <code><p style = "margin: 0px;"> ] </p></code>
+                <code><p style = "margin: 0px;"></p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>var raw = JSON.stringify({</hover-over>
+                    <hover-text>This code controls the login page we had, where it inputed the user's credentals and later on is linked to the backend. Lines(32-43)</hover-text>
+                </code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>"name": name,</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>"uid": uid,</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>"password": password,</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>"dob": dob,</p></code>
+                <code><p style = "margin: 0px;">});</p></code>
+                <code><p style = "margin: 0px;">var requestOptions = {</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>method: 'POST',</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>headers: signupHeaders,</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>body: raw,</p></code>
+                <code><p style = "margin: 0px;"> <t-ab></t-ab>redirect: 'follow'</p></code>
+                <code><p style = "margin: 0px;">};</p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>fetch("http://localhost:8086/api/users/", requestOptions)</hover-over>
+                    <hover-text>This part of the code takes the paramaters that were defined and requests them to "https://localhost:8086/api/users", the url that links our frontend with our backend. Lines(44-60)</hover-text>
+                </code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab>.then(response => {</p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over><t-ab></t-ab><t-ab></t-ab>if (response.ok) {</hover-over>
+                    <hover-text>This part of the code answers our Success, redirecting the user to our chess playing site, chess.html. Lines(46-49)</hover-text>
+                </code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab>console.log("Successfully Signed Up");</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab>alert("Account has been created. You will be directed to login page shortly.");</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab>window.location.href = "/Users/nihargupta/vscode/Chess-Frontend-2/chess.html"</p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over><t-ab></t-ab><t-ab></t-ab>} else {</hover-over>
+                    <hover-text>This part of the code answers an error encountered, serving the user an error message in the form of a label tag. Lines(50-55)</hover-text>
+                </code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab></p>console.error("Sign Up Failed");</code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab></p>// You can handle failed login attempts here</code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab></p>const errorMessageDiv = document.getElementById('errorMessage');</code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab></p>errorMessageDiv.innerHTML = '&lt;label style="color: red;"&gt;User Sign Up Failed&lt;/label&gt;';</code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab>}</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab>})</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab>.then(result => {</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab>console.log(result)</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab>})</p></code>
+                <code><p style = "margin: 0px;"><t-ab></t-ab>.catch(error =>  {console.log("Error:", error)})</p></code>
+
+
+                <!--var raw = JSON.stringify({
+                "name" : name,
+                "uid": uid,
+                "password": pw,
+                "dob": dob
+                });
+            var requestOptions = {
+                method: 'POST',
+                headers: signupHeaders,
+                body: raw,
+                redirect: 'follow'
+                };
+            fetch("http://localhost:8086/api/users/", requestOptions)
+                .then(response => {
+                    if (response.ok) {
+                        console.log("Successfully Signed Up");
+                        alert("Account has been created. You will be directed to login page shortly.");
+                        window.location.href = "/Users/nihargupta/vscode/Chess-Frontend-2/chess.html"
+                    } else {
+                        console.error("Sign Up Failed");
+                        // You can handle failed login attempts here
+                        const errorMessageDiv = document.getElementById('errorMessage');
+                        errorMessageDiv.innerHTML = '<label style="color: red;">User Sign Up Failed</label>';
+                    }
+                })
+                .then(result => {
+                    console.log(result);
+                    })
+                .catch(error => console.log('error', error));
+            }-->
+                
+            </div>
+        </div>
+        <script src = "base.js"></script>
+    </body>
+    <script>
+        document.getElementById("displayedCode").appendChild(document.getElementById("newText"))
+    </script>
+</html>

@@ -1,0 +1,80 @@
+.tabButtons{
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    margin: 0px 8px;
+    border: solid 4px white;
+    border-bottom: 0px;
+    padding: 4px;
+    border-radius: 8px 8px 0px 0px;
+}
+#mainTextEditor{
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    color: WHITE;
+    width: 60vw;
+    left: 50%;
+    position: absolute;
+    margin: 2% 0px;
+    height: calc(91% - 44px);
+    padding: 0px 36px;
+    transform: translate(-50%);
+    background-color: #111113;
+}
+#tabBar{
+    display: flex;
+    color: white;
+    background-color: #111113;
+    padding: 12px 8px 0px 4px;
+    user-select: none;
+    cursor: pointer;
+}
+#tabLines{
+    padding: 1vw 6px;
+    color: #9b9b9b;
+    width: max-content;
+}
+#displayedCode{
+    padding: 1vh 0vh;
+    text-align: left;
+    height: calc(100% - 2vh);
+    overflow: scroll;
+    width: 100%;
+}
+hover-over{
+    cursor: pointer;
+}
+hover-text{
+    display: none;
+    text-align: left;
+    position: absolute;
+    top: 18px;
+    width: calc(100% - 44px);
+    background-color: #282839;
+    user-select: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    border: solid slategray 4px;
+    z-index: 5;
+}
+hover-flag{
+    text-align: left;
+    top: -5px;
+    position: relative;
+    background-clip: text;
+    background-color: red;
+    filter: saturate(5);
+    color: transparent;
+}
+t-ab{
+    margin-left: 16px;
+}
+code{
+    display: flex;
+}
+#newText{
+    left: 36px;
+    position: relative;
+}
