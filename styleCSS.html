@@ -1,13 +1,62 @@
 <html>
     <head>
         <meta charset="utf-16"></meta>
+        <title>main.py</title>
+        <style>
+            p{
+                margin: 0px;
+            }
+        </style>
     </head>
     <body style = "margin: 0px; background-color: #282828;">
         <div id = "Test">
             <div id = "newText">
-                <code data = "2"><p style = "margin: 0px;">/* Welcome to my markdown, simply hover over text with a pointer icon */</p></code><br>
-                <code><hover-flag>🚩</hover-flag><hover-over>/* Like This */</hover-over><hover-text>Also Shown through the colored flags on the left</hover-text></code><br>
+                <code data = "2"><p style = "margin: 0px;"># Welcome to my markdown, simply hover over text with a pointer icon */</p></code><br>
+                <code><hover-flag>🚩</hover-flag><hover-over># Like This</hover-over><hover-text>Also Shown through the colored flags on the left</hover-text></code><br>
+                <code><p>from stockfish import Stockfish</p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>import stockfish</hover-over>
+                    <hover-text>These first two lines import both the python libary to convert stockfish, which uses bash into python commands. Lines(1-3)</hover-text>
+                </code>
+                <code><p></p></code>
+                <code><p>stockfish = Stockfish("/usr/local/bin/stockfish")</p></code>
+                <code><p></p></code>
+                <code><p>alphabet = "abcdefgh"</p></code>
+                <code><p>stockfish.set_fen_position("rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2")</p></code>
+                <code><p></p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over><tab></tab>def playerMove(formerX, formerY, currentX, currentY):</hover-over>
+                    <hover-text>This part of the code, has the player set a move the line after, and then, has stockfish take the best move, and feeds it back as a move to Stockfish by using the list "alphabet" as shown in "Lists and Dictionaries" to convert it into coordinate points. Lines (10-20)</hover-text>
+                </code>
+                <code><hover-flag>🚩</hover-flag><t-ab></t-ab><hover-over>if(formerX &lt; 0 or formerY &lt; 0 or currentX &lt; 0 or currentY &lt; 0):</hover-over>
+                    <hover-text>This cleans up the data, to prevent invalid moves from happening as part of the extra credit. Lines(11 - 14)</hover-text>
+                </code>
+                <code><t-ab></t-ab><t-ab></t-ab><p>return false</p></code>
+                <code><t-ab></t-ab><p>if(formerX &gt; 7 or formerY &gt; 7 or currentX &gt; 7 or currentY &gt; 7):</p>
+                </code>
+                <code><t-ab></t-ab><t-ab></t-ab><p>return false</p></code>
                 
+
+                <code><t-ab></t-ab><p>stockfish.make_moves_from_current_position([f"{alphabet[formerX]}{formerY}{alphabet[currentX]}{currentY}"])</p></code>
+                <code><t-ab></t-ab><p>print("Inputing", [f"{alphabet[formerX]}{formerY - 1}{alphabet[currentX]}{currentY - 1}"])</p></code>
+                <code><t-ab></t-ab><p>bestMove = stockfish.get_best_move()</p></code>
+                <code><t-ab></t-ab><p>print([f"{bestMove}"])</p></code>
+                <code><t-ab></t-ab><p>stockfish.make_moves_from_current_position([f"{bestMove}"])</p></code>
+                <code><t-ab></t-ab><p>print("\n" + "*"*50)</p></code>
+                <code><t-ab></t-ab><p></p></code>
+                <code><p># Dummy Code</p></code>
+                <code><p>print("Checking Side", stockfish.get_top_moves(3))</p></code>
+                <code><p></p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>playerMove(3, 2, 3, 4)</hover-over><hover-text>This inputs the move, as if the player inputed them at the frontend. Line (24)</hover-text></code>
+                <code><p>playerMove(1, 2, 1, 3)</p></code>
+                <code><p>playerMove(1, 1, 2, 3)</p></code>
+                <code><p>playerMove(6, 1, 5, 3)</p></code>
+                <code><p></p></code>
+                <code><p>stockfish.get_fen_position()</p></code>
+                <code><p></p></code>
+                <code><hover-flag>🚩</hover-flag><hover-over># Implemented Backend Code</hover-over>
+                    <hover-text>Beyond here, we are currently in the process of implementing a backend connection in accordance to the API and JSON Catagory</hover-text>
+                </code>
+                <!-- <code><t-ab></t-ab><p></p></code> -->
+                </p></code>
             </div>
         </div>
         <script src = "base.js"></script>

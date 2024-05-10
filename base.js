@@ -1,7 +1,7 @@
 /*    <body style="background-color: #282828; margin: 0px;">
         <div id = "tabBar">
             <p class="tabButtons" onclick = "location.href = 'index.html'">index.html</p>
-            <p class="tabButtons" onclick = "location.href = 'styleCSS.html'">style.css</p>
+            <p class="tabButtons" onclick = "location.href = 'styleCSS.html'">main.py</p>
             <p class="tabButtons" onclick = "location.href = 'srcJS.html'"> src.js</p>
         </div>
     
@@ -40,7 +40,7 @@ function defaultPage(){
     <body style="background-color: #282828; margin: 0px;">
         <div id = "tabBar">
             <p class="tabButtons" onclick = "location.href = 'index.html'">index.md</p>
-            <p class="tabButtons" onclick = "location.href = 'styleCSS.html'">style.css</p>
+            <p class="tabButtons" onclick = "location.href = 'styleCSS.html'">main.py</p>
             <p class="tabButtons" onclick = "location.href = 'srcJS.html'"> src.js</p>
         </div>
 

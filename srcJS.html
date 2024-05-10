@@ -8,7 +8,7 @@
                 <code data = "2"><p style = "margin: 0px;">// Welcome to my markdown, simply hover over text with a pointer icon</p></code>
                 <code><hover-flag>🚩</hover-flag><hover-over>// Like This</hover-over><hover-text>These are indicated through the colored flags on the left</hover-text></code>
                 <code><p style = "margin: 0px;"></p></code>
-                <code><hover-flag>🚩</hover-flag><hover-over>var chessPieces = [</hover-over><hover-text>This shows usage of a 2d array, with the purpouse being to control the chess board and store the pieces of the positions. Lines(63-72)</hover-text></code>
+                <code><hover-flag>🚩</hover-flag><hover-over>var chessPieces = [</hover-over><hover-text>This shows usage of a 2d array, with the purpouse being to control the chess board and store the pieces of the positions. This links to Lists / Dictionaries, by usage of a list in our code. Lines(63-72)</hover-text></code>
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>["BR", "BN", "BB", "BQ", "BK", "BB", "BN", "BR"], </p></code>
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>["BP", "BP", "BP", "BP", "BP", "BP", "BP", "BP"], </p></code>
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>["&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;", "&nbsp;&nbsp;"], </p></code>
@@ -18,9 +18,8 @@
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>["WP", "WP", "WP", "WP", "WP", "WP", "WP", "WP"], </p></code>
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>["WR", "WN", "WB", "WQ", "WK", "WB", "WN", "WR"], </p></code>
                 <code><p style = "margin: 0px;"> ] </p></code>
-                <code><p style = "margin: 0px;"></p></code>
                 <code><hover-flag>🚩</hover-flag><hover-over>var raw = JSON.stringify({</hover-over>
-                    <hover-text>This code controls the login page we had, where it inputed the user's credentals and later on is linked to the backend. Lines(32-43)</hover-text>
+                    <hover-text>This code controls the login page we had, where it inputed the user's credentals and later on is linked to the backend as part of the frontend usage / API and JSON. Lines(32-43)</hover-text>
                 </code>
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>"name": name,</p></code>
                 <code><p style = "margin: 0px;"> <t-ab></t-ab>"uid": uid,</p></code>
@@ -38,13 +37,13 @@
                 </code>
                 <code><p style = "margin: 0px;"><t-ab></t-ab>.then(response => {</p></code>
                 <code><hover-flag>🚩</hover-flag><hover-over><t-ab></t-ab><t-ab></t-ab>if (response.ok) {</hover-over>
-                    <hover-text>This part of the code answers our Success, redirecting the user to our chess playing site, chess.html. Lines(46-49)</hover-text>
+                    <hover-text>This shows a successful 200 result as part of an inputed JSON as part of the API and JSON usage, causing for the user to be redirected to chess.html. Lines(46-49).</hover-text>
                 </code>
                 <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab>console.log("Successfully Signed Up");</p></code>
                 <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab>alert("Account has been created. You will be directed to login page shortly.");</p></code>
                 <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab>window.location.href = "/Users/nihargupta/vscode/Chess-Frontend-2/chess.html"</p></code>
                 <code><hover-flag>🚩</hover-flag><hover-over><t-ab></t-ab><t-ab></t-ab>} else {</hover-over>
-                    <hover-text>This part of the code answers an error encountered, serving the user an error message in the form of a label tag. Lines(50-55)</hover-text>
+                    <hover-text>This part of the code answers an error encountered like a 400 or 404 from our JSON, serving the user an error message in the form of a label tag, for the API and JSON requirements. Lines(50-55)</hover-text>
                 </code>
                 <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab></p>console.error("Sign Up Failed");</code>
                 <code><p style = "margin: 0px;"><t-ab></t-ab><t-ab></t-ab><t-ab></t-ab></p>// You can handle failed login attempts here</code>
